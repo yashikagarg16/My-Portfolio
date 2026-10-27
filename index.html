@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yashika Garg — Portfolio</title>
+  <meta name="description" content="Yashika Garg — developer building AI agents, fintech systems and full-stack products.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230B0F19'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='%23FF6A3D'>YG</text></svg>">
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top"><span class="brand-mark">YG</span><span>Yashika Garg</span></a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <canvas id="scene" aria-hidden="true"></canvas>
+      <div class="hero-copy">
+        <p class="eyebrow mono">// developer · AI agents · fintech</p>
+        <h1>I build systems where <span class="accent">AI proposes</span> and <span class="underline">code decides.</span></h1>
+        <p class="lede">I'm Yashika Garg. I design full-stack products around language models — with deterministic rules, audit trails and tests underneath, so the results can be trusted.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="https://github.com/yashikagarg16" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div><strong>3</strong><span>live products</span></div>
+        <div><strong>185+</strong><span>automated tests</span></div>
+        <div><strong>0</strong><span>LLM-only decisions</span></div>
+      </div>
+      <a class="scroll-cue mono" href="#projects">scroll ↓</a>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <p class="eyebrow mono">01 / selected work</p>
+        <h2>Projects</h2>
+      </div>
+      <div class="projects" id="project-list"></div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section">
+      <div class="section-head">
+        <p class="eyebrow mono">02 / toolbox</p>
+        <h2>Stack</h2>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-col"><h3>Backend</h3><p>Python · FastAPI · Flask · Pydantic · SQLAlchemy · Alembic</p></div>
+        <div class="stack-col"><h3>Frontend</h3><p>React · TypeScript · Vite · Vanilla JS · Three.js</p></div>
+        <div class="stack-col"><h3>AI</h3><p>Gemini function calling · grounded extraction · ML from scratch</p></div>
+        <div class="stack-col"><h3>Data &amp; infra</h3><p>PostgreSQL · MongoDB · SQLite · Docker · GitHub Actions · Vercel</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <p class="eyebrow mono">03 / say hello</p>
+      <h2>Let's build something <span class="accent">reliable.</span></h2>
+      <a class="btn btn-solid big" href="https://github.com/yashikagarg16" target="_blank" rel="noopener">github.com/yashikagarg16 ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer mono">© <span id="year"></span> Yashika Garg</footer>
+
+  <!-- PROJECT DETAIL -->
+  <div class="detail" id="detail" role="dialog" aria-modal="true" aria-labelledby="detail-title" hidden>
+    <div class="detail-inner" id="detail-body"></div>
+  </div>
+
+  <script src="projects.js"></script>
+  <script src="app.js"></script>
+  <script type="module" src="scene.js"></script>
+</body>
+</html>
