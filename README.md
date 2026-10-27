@@ -1,6 +1,6 @@
 # Yashika Garg — Portfolio
 
-Live at **https://yashikagarg16.github.io**
+Live at **https://yashikagarg16.github.io/My-Portfolio/**
 
 A static, dependency-free portfolio with a Three.js "system architecture" hero, 3D-tilting project cards and a detail view for every project.
 

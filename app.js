@@ -118,7 +118,7 @@
               <h3><span class="mono accent">05</span> Screens</h3>
               <div class="gallery">
                 ${p.gallery
-                  .map(([src, cap]) => `<figure><img src="${src}" alt="${esc(cap)}" loading="lazy"><figcaption>${esc(cap)}</figcaption></figure>`)
+                  .map(([src, cap]) => `<figure><a href="${src}" target="_blank" rel="noopener" title="Open full size"><img src="${src}" alt="${esc(cap)}" loading="lazy"></a><figcaption>${esc(cap)}</figcaption></figure>`)
                   .join("")}
               </div>
             </section>`

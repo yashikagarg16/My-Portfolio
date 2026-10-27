@@ -53,7 +53,7 @@ window.PROJECTS = [
       "Reads placement and internship emails, extracts the key facts (company, role, deadline, eligibility, form link) and checks eligibility against your profile in plain code — showing the exact sentence behind every decision. When it can't be sure it says “needs review” instead of guessing, and it never submits anything for you.",
     demo: "https://campus-inbox-agent.vercel.app",
     repo: "https://github.com/yashikagarg16/Campus-Inbox-Agent",
-    cover: null,
+    cover: `${RAW}/Campus-Inbox-Agent/main/docs/screenshots/02-dashboard.png`,
     stack: ["FastAPI", "React", "TypeScript", "PostgreSQL", "Gemini", "Vercel"],
     stats: [
       ["35/38", "verdicts correct (synthetic)"],
@@ -80,7 +80,14 @@ window.PROJECTS = [
       "Rule engine → eligible / not eligible / needs review",
       "Dashboard, evidence viewer & full audit log",
     ],
-    gallery: [],
+    gallery: [
+      ["03-not-eligible.png", "Not eligible: the CGPA cutoff and the sentence that proves it"],
+      ["04-digest-split.png", "Digest email split into separate opportunities"],
+      ["05-needs-review.png", "Needs review: a condition code can't check"],
+      ["06-eligible.png", "Eligible: every rule backed by a quote"],
+      ["01-landing.png", "Landing page with the live demo entry"],
+      ["07-profile.png", "Profile the rules are checked against"],
+    ].map(([f, c]) => [`${RAW}/Campus-Inbox-Agent/main/docs/screenshots/${f}`, c]),
   },
   {
     id: "revenueguard",
